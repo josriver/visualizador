@@ -618,7 +618,6 @@ init = function () {
   conf.getUrlParameters();
   createLayout(conf);
   createMap(conf);
-//method added by Norman Huasebe
   enableGetFeature();
 };
 
