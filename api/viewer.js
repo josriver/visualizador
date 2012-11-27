@@ -419,7 +419,6 @@ function removeAjaxLoader() {
 
 /**
  * Load the context from the  WMC specified in the URL
- * A proxy may be necessary for that function
  * http://trac.osgeo.org/openlayers/wiki/FrequentlyAskedQuestions#HowdoIsetupaProxyHost
  * @param {Configuration} conf Configuration of the viewer
  */
@@ -509,7 +508,7 @@ function createMap(conf) {
   var request;
   request = loadWmc(conf);
   if (request.status < 200 || request.status >= 300 || !request.responseText) {
-    // probamos en HTTP por si acaso
+
     request = loadWmc(conf, 'http:');
   }
 }
