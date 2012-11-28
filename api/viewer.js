@@ -565,9 +565,11 @@ function enableGetFeature()
 
 
 }
-// Global vars for popup use
+// 
+//Global vars for popup use
 var popup;
 var mouseLoc;
+//
 // parse the response provided into the popup
             function setHTML(response){
  			var lines = response.responseText.split('\n');
@@ -594,7 +596,7 @@ depto + "</h2><hr/>" +
             		popup.destroy();
             		popup = null;
 		        }
-        		popup = new OpenLayers.Popup.AnchoredBubble("Informion de DEpartamento",
+        		popup = new OpenLayers.Popup.AnchoredBubble("Informacion Departamento",
                                         mouseLoc,
                                         new OpenLayers.Size(250,120),
                                         popup_info,
